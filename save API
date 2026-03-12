@@ -1,0 +1,7 @@
+def save_key(key):
+    with open("quickbill_keys.txt", "a") as f:
+        f.write(key + "\n")
+
+key = generate_api_key()
+save_key(key)
+print("Saved API Key:", key)
